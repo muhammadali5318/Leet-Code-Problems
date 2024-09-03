@@ -5,9 +5,9 @@
  */
 var kidsWithCandies = function(candies, extraCandies) {
     
-    const greatestNoOfCandies = Math.max(...candies)
+    const greatestCandy = Math.max(...candies)
 
-    const newCandies = candies.map(candy => (candy += extraCandies) >= greatestNoOfCandies)
+    const newCandies = candies.map(candy => (candy += extraCandies) >= greatestCandy)
 
     return newCandies;
 };
